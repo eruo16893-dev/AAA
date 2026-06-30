@@ -34,6 +34,7 @@ def return_date():
         response_signal = "00000000"
         
     # 8桁の2進数をゲームに返却
+    # 8桁の2進数をゲームに返却
     return response_signal, 200
 
 if __name__ == '__main__':
