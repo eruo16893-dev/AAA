@@ -33,9 +33,9 @@ def return_date():
         # 何も入力がない、または間違った信号の場合は0を返す
         response_signal = "00000000"
         
-    # 8桁の2進数をゲームに返却
-    # 8桁の2進数をゲームに返却
-    return response_signal, 200
+    # 8桁の2進数をJSON形式にしてゲームに返却
+    from flask import jsonify
+    return jsonify({"value": response_signal}), 200
 
 if __name__ == '__main__':
     import os
